@@ -41,21 +41,33 @@ which leverage the bitcoin protocol and blockchain technology.
 
  
 -- Algorithm:        Sha256
+
 -- Block:            1 minute
+
 -- Difficulty:       3 blocks
+
 -- Ticker:           MINR
+
 -- Block size:       6mb
+
 -- P2P Port:         6116
+
 -- RPC Port:         6117
+
 -- Prune height:     1,000,000
+
 -- Max supply:       36,000,660 millon coins
 
 -- Masternodes:         15,000 coins
+
 -- POW Confirmations:   36
+
 -- Instant send Confirmations: 6
+
 -- Masternode Confirmations:   13
 
 -- Premined: 3 million (8.33%)  - for presale - first 200 masternodes  - Tip bots &  giveaway to community - bounties
+
 --                 : Gains will be used for paying servers  such as explorers & website, the developers, 
 		    future development for real use of the cryptocurrency in real life - 
 		    new exchanges - aiming Binance (see Roadmap)
@@ -68,8 +80,11 @@ which leverage the bitcoin protocol and blockchain technology.
 LINKS:
 
 -- Website: https://mineriumcoin.com
+
 -- Twitter: https://twitter.com/mineriumcoin
+
 -- Discord: https://discord.gg/yPfMCwH
+
 -- Telegram: https://t.me/MineriumCoinOfficial
 
 
@@ -78,8 +93,6 @@ LINKS:
 EXCHANGES:
 
 -- Exchange: https://erex.io
-
-
 
 
 
