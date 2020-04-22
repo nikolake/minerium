@@ -1,4 +1,4 @@
-![](images/mineriumcoin.png)
+         ![](images/mineriumcoin.png)
 
 
 Minerium staging tree 
