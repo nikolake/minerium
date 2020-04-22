@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/minerium_bg.qm</file>
+        <file alias="de">locale/minerium_de.qm</file>
+        <file alias="en">locale/minerium_en.qm</file>
+        <file alias="es">locale/minerium_es.qm</file>
+        <file alias="fi">locale/minerium_fi.qm</file>
+        <file alias="fr">locale/minerium_fr.qm</file>
+        <file alias="it">locale/minerium_it.qm</file>
+        <file alias="ja">locale/minerium_ja.qm</file>
+        <file alias="pl">locale/minerium_pl.qm</file>
+        <file alias="pt">locale/minerium_pt.qm</file>
+        <file alias="ru">locale/minerium_ru.qm</file>
+        <file alias="sk">locale/minerium_sk.qm</file>
+        <file alias="sv">locale/minerium_sv.qm</file>
+        <file alias="vi">locale/minerium_vi.qm</file>
+        <file alias="zh_CN">locale/minerium_zh_CN.qm</file>
+        <file alias="zh_TW">locale/minerium_zh_TW.qm</file>
+    </qresource>
+</RCC>

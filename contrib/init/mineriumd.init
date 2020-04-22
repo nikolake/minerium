@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  mineriumd The Minerium Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: mineriumd
+# processname: mineriumd
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/mineriumd, see below
+if [ -f /etc/sysconfig/mineriumd ]; then
+        . /etc/sysconfig/mineriumd
+fi
+
+RETVAL=0
+
+prog=mineriumd
+# you can override the lockfile via MINERIUMD_LOCKFILE in /etc/sysconfig/mineriumd
+lockfile=${MINERIUMD_LOCKFILE-/var/lock/subsys/mineriumd}
+
+# mineriumd defaults to /usr/bin/mineriumd, override with MINERIUMD_BIN
+mineriumd=${MINERIUMD_BIN-/usr/bin/mineriumd}
+
+# mineriumd opts default to -disablewallet, override with MINERIUMD_OPTS
+mineriumd_opts=${MINERIUMD_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $mineriumd $mineriumd_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

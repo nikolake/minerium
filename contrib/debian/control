@@ -1,0 +1,68 @@
+Source: minerium
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@minerium.org>
+Uploaders: Holger Schinzel <holger@minerium.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.minerium.org/
+Vcs-Git: git://github.com/minerium/minerium.git
+Vcs-Browser: https://github.com/minerium/minerium
+
+Package: mineriumd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Minerium is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Minerium uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Minerium Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, mineriumd, and the CLI tool
+ minerium-cli to interact with the daemon.
+
+Package: minerium-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Minerium is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Minerium uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Minerium Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Minerium-Qt, a GUI for Minerium based on Qt.
+
+Package: minerium-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Minerium is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Minerium uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Minerium Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides minerium-tx, a command-line transaction creation
+ tool which can be used without a minerium daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

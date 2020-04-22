@@ -1,0 +1,33 @@
+# /etc/conf.d/mineriumd: config file for /etc/init.d/mineriumd
+
+# Config file location
+#MINERIUMD_CONFIGFILE="/etc/mineriumcore/minerium.conf"
+
+# What directory to write pidfile to?  (created and owned by $MINERIUMD_USER)
+#MINERIUMD_PIDDIR="/var/run/mineriumd"
+
+# What filename to give the pidfile
+#MINERIUMD_PIDFILE="${MINERIUMD_PIDDIR}/mineriumd.pid"
+
+# Where to write mineriumd data (be mindful that the blockchain is large)
+#MINERIUMD_DATADIR="/var/lib/mineriumd"
+
+# User and group to own mineriumd process
+#MINERIUMD_USER="mineriumcore"
+#MINERIUMD_GROUP="mineriumcore"
+
+# Path to mineriumd executable
+#MINERIUMD_BIN="/usr/bin/mineriumd"
+
+# Nice value to run mineriumd under
+#MINERIUMD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+MINERIUMD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for mineriumd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+MINERIUMD_SIGTERM_TIMEOUT=60

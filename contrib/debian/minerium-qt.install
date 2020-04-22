@@ -1,0 +1,6 @@
+usr/local/bin/minerium-qt usr/bin
+share/pixmaps/minerium32.xpm usr/share/pixmaps
+share/pixmaps/minerium16.xpm usr/share/pixmaps
+share/pixmaps/minerium128.png usr/share/pixmaps
+debian/minerium-qt.desktop usr/share/applications
+debian/minerium-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Minerium
+Comment=Minerium P2P Cryptocurrency
+Comment[fr]=Minerium, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Minerium, eşten eşe kriptografik sanal para birimi
+Exec=minerium-qt %u
+Terminal=false
+Type=Application
+Icon=minerium128
+MimeType=x-scheme-handler/minerium;
+Categories=Office;Finance;

@@ -1,0 +1,92 @@
+#!/sbin/runscript
+
+# backward compatibility for existing gentoo layout 
+#
+if [ -d "/var/lib/mineriumcore/.mineriumcore" ]; then
+	MINERIUMD_DEFAULT_DATADIR="/var/lib/mineriumcore/.mineriumcore"
+else
+	MINERIUMD_DEFAULT_DATADIR="/var/lib/mineriumd"
+fi
+
+MINERIUMD_CONFIGFILE=${MINERIUMD_CONFIGFILE:-/etc/mineriumcore/minerium.conf}
+MINERIUMD_PIDDIR=${MINERIUMD_PIDDIR:-/var/run/mineriumd}
+MINERIUMD_PIDFILE=${MINERIUMD_PIDFILE:-${MINERIUMD_PIDDIR}/mineriumd.pid}
+MINERIUMD_DATADIR=${MINERIUMD_DATADIR:-${MINERIUMD_DEFAULT_DATADIR}}
+MINERIUMD_USER=${MINERIUMD_USER:-${MINERIUM_USER:-mineriumcore}}
+MINERIUMD_GROUP=${MINERIUMD_GROUP:-mineriumcore}
+MINERIUMD_BIN=${MINERIUMD_BIN:-/usr/bin/mineriumd}
+MINERIUMD_NICE=${MINERIUMD_NICE:-${NICELEVEL:-0}}
+MINERIUMD_OPTS="${MINERIUMD_OPTS:-${MINERIUM_OPTS}}"
+
+name="Minerium Core Daemon"
+description="Minerium cryptocurrency P2P network daemon"
+
+command="/usr/bin/mineriumd"
+command_args="-pid=\"${MINERIUMD_PIDFILE}\" \
+		-conf=\"${MINERIUMD_CONFIGFILE}\" \
+		-datadir=\"${MINERIUMD_DATADIR}\" \
+		-daemon \
+		${MINERIUMD_OPTS}"
+
+required_files="${MINERIUMD_CONFIGFILE}"
+start_stop_daemon_args="-u ${MINERIUMD_USER} \
+			-N ${MINERIUMD_NICE} -w 2000"
+pidfile="${MINERIUMD_PIDFILE}"
+
+# The retry schedule to use when stopping the daemon. Could be either
+# a timeout in seconds or multiple signal/timeout pairs (like
+# "SIGKILL/180 SIGTERM/300")
+retry="${MINERIUMD_SIGTERM_TIMEOUT}"
+
+depend() {
+	need localmount net
+}
+
+# verify
+# 1) that the datadir exists and is writable (or create it)
+# 2) that a directory for the pid exists and is writable
+# 3) ownership and permissions on the config file
+start_pre() {
+	checkpath \
+	-d \
+	--mode 0750 \
+	--owner "${MINERIUMD_USER}:${MINERIUMD_GROUP}" \
+	"${MINERIUMD_DATADIR}"
+
+	checkpath \
+	-d \
+	--mode 0755 \
+	--owner "${MINERIUMD_USER}:${MINERIUMD_GROUP}" \
+	"${MINERIUMD_PIDDIR}"
+
+	checkpath -f \
+	-o ${MINERIUMD_USER}:${MINERIUMD_GROUP} \
+	-m 0660 \
+	${MINERIUMD_CONFIGFILE}
+
+	checkconfig || return 1
+}
+
+checkconfig()
+{
+	if ! grep -qs '^rpcpassword=' "${MINERIUMD_CONFIGFILE}" ; then
+		eerror ""
+		eerror "ERROR: You must set a secure rpcpassword to run mineriumd."
+		eerror "The setting must appear in ${MINERIUMD_CONFIGFILE}"
+		eerror ""
+		eerror "This password is security critical to securing wallets "
+		eerror "and must not be the same as the rpcuser setting."
+		eerror "You can generate a suitable random password using the following"
+		eerror "command from the shell:"
+		eerror ""
+		eerror "bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'"
+		eerror ""
+		eerror "It is also recommended that you also set alertnotify so you are "
+		eerror "notified of problems:"
+		eerror ""
+		eerror "ie: alertnotify=echo %%s | mail -s \"Minerium Core Alert\"" \
+			"admin@foo.com"
+		eerror ""
+		return 1
+	fi
+}
