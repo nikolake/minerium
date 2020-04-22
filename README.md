@@ -1,7 +1,7 @@
 ![](images/mineriumcoin.png)
 
 
-Minerium staging tree 
+Minerium staging treeMinerium staging treeMinerium staging tree 
 =========================
 
 `master:` [![Build Status](https://travis-ci.org/minerium/minerium.svg?branch=master)](https://travis-ci.org/minerium/minerium) 
@@ -15,38 +15,32 @@ What is Minerium?
 Minerium is a merge-minable SHA256 coin which provides an array of useful services
 which leverage the bitcoin protocol and blockchain technology.
 
-- 1 minute block targets, diff retarget each block using Dark Gravity Wave(24) 
+- 1 minute block targets, diff retarget every 3 blocks using Dark Gravity Wave(24) 
 - Rewards are variable:
-  - 10 percent to governance proposals
-  - 18/27 percent cycle to masternodes
+  - 25/100 percent cycle to masternodes  see: https://mineriumcoin.com/block_rewards.png (or image below)
   - remainder to miner
   - miner and masternode share fees 50:50
 - SHA256 Proof of Work
 - Mineable either exclusively or via merge-mining any SHA256 PoW coin
 - Minerium data service fees burned
 - Masternode collateral requirement: 15000 Mineriums
-- Governance proposals payout schedule: every month
-- Governance funding per round (168630 Mineriums per month)
 
-Services include:
+-The superblocks have been removed, and instead we implemented a new function called "SuperDay" during which the blocks reward receive an important augmentation of it's amount.
+    The goal beeing to give a chance of the new miners joining the project late in time since it started, to mine it themselves,        and not being forced to buy at the exchange.
+    Making a mining process less boring, less linear and more interesting.
 
-- Hybrid layer 2 PoW/PoS consensus with bonded validator system (masternodes)
-- Decentralized governance (blockchain pays for work via proposals and masternode votes)
-- Decentralized identity reservation, ownership, and exchange
-- Digital certificate storage, ownership, and exchange
-- Distributed marketplace and exchange
-- Digital services provider marketplace and platform
-- Digital asset creation and management
-- Decentralized escrow service
+![](images/block_rewards.png)
+
+
 
 For more information, as well as an immediately useable, binary version of
-the Minerium client sofware, see https://www.minerium.org.
+the Minerium client sofware, see https://mineriumcoin.com/  (downloads section)
 
 
 License
 -------
 
-Minerium Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+MineriumCoin is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
