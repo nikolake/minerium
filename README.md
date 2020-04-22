@@ -15,21 +15,74 @@ What is Minerium?
 Minerium is a merge-minable SHA256 coin which provides an array of useful services
 which leverage the bitcoin protocol and blockchain technology.
 
-- 1 minute block targets, diff retarget every 3 blocks using Dark Gravity Wave(24) 
-- Rewards are variable:
-  - 25/100 percent cycle to masternodes  see: https://mineriumcoin.com/block_rewards.png (or image below)
-  - remainder to miner
-  - miner and masternode share fees 50:50
-- SHA256 Proof of Work
-- Mineable either exclusively or via merge-mining any SHA256 PoW coin
-- Minerium data service fees burned
-- Masternode collateral requirement: 15000 Mineriums
 
--The superblocks have been removed, and instead we implemented a new function called "SuperDay" during which the blocks reward receive an important augmentation of it's amount.
+-- ASICS friendly
+
+-- 51% attacks resistant
+
+-- Adopts Segwit transations
+
+-- Based peer-to-peer cryptocurrency that is forked from Syscoin and Martkist coin
+
+-- Uses the POW (Proof of Work) combined with the Masternodes for more security and passive profits
+ 
+ -Avoiding frozen blockchain - Blocks are fluid
+
+-- Adopts the technique of PrivateSend which allows anonymous transactions
+ 
+ -It mixes all the transactions into multiple parts, everything inside one single transaction.
+
+
+-- The superblocks have been removed, and instead we implemented a new function called "SuperDay" during which the blocks reward receive an important augmentation of it's amount.
     The goal beeing to give a chance of the new miners joining the project late in time since it started, to mine it themselves,        and not being forced to buy at the exchange.
     Making a mining process less boring, less linear and more interesting.
 
 ![](images/block_rewards.png)
+
+ 
+-- Algorithm:        Sha256
+-- Block:            1 minute
+-- Difficulty:       3 blocks
+-- Ticker:           MINR
+-- Block size:       6mb
+-- P2P Port:         6116
+-- RPC Port:         6117
+-- Prune height:     1,000,000
+-- Max supply:       36,000,660 millon coins
+
+-- Masternodes:         15,000 coins
+-- POW Confirmations:   36
+-- Instant send Confirmations: 6
+-- Masternode Confirmations:   13
+
+-- Premined: 3 million (8.33%)  - for presale - first 200 masternodes  - Tip bots &  giveaway to community - bounties
+--                 : Gains will be used for paying servers  such as explorers & website, the developers, 
+		    future development for real use of the cryptocurrency in real life - 
+		    new exchanges - aiming Binance (see Roadmap)
+
+-- Pre-sale: 50 sats/coin  - 0.0075 for 1 masternode
+
+
+
+
+LINKS:
+
+-- Website: https://mineriumcoin.com
+-- Twitter: https://twitter.com/mineriumcoin
+-- Discord: https://discord.gg/yPfMCwH
+-- Telegram: https://t.me/MineriumCoinOfficial
+
+
+
+
+EXCHANGES:
+
+-- Exchange: https://erex.io
+
+
+
+
+
 
 
 
