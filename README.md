@@ -12,8 +12,9 @@ https://MineriumCoin.com
 What is Minerium?
 ----------------
 
-Minerium is a merge-minable SHA256 coin which provides an array of useful services
-which leverage the bitcoin protocol and blockchain technology.
+Minerium is a mineable SHA256 crypto currency, a coin which use the bitcoin protocol and blockchain technology.
+
+Here are it's details and specifications:
 
 
 -- ASICS friendly
