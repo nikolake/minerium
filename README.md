@@ -41,59 +41,60 @@ Here are it's details and specifications:
 ![](images/block_rewards.png)
 
  
--- Algorithm:        Sha256
+• Algorithm:        Sha256
 
--- Block:            1 minute
+• Block:            1 minute
 
--- Difficulty:       3 blocks
+• Difficulty:       3 blocks
 
--- Ticker:           MINR
+• Ticker:           MINR
 
--- Block size:       6mb
+• Block size:       6mb
 
--- P2P Port:         6116
+• P2P Port:         6116
 
--- RPC Port:         6117
+• RPC Port:         6117
 
--- Prune height:     1,000,000
+• Prune height:     1,000,000
 
--- Max supply:       36,000,660 millon coins
+• Max supply:       36,000,660 millon coins
 
--- Masternodes:         15,000 coins
+• Masternodes:         15,000 coins
 
--- POW Confirmations:   36
+• POW Confirmations:   36
 
--- Instant send Confirmations: 6
+• Instant send Confirmations: 6
 
--- Masternode Confirmations:   13
+• Masternode Confirmations:   13
 
--- Premined: 3 million (8.33%)  - for presale - first 200 masternodes  - Tip bots &  giveaway to community - bounties
+• Premined: 3 million (8.33%)  - for presale - first 200 masternodes  - Tip bots &  giveaway to community - bounties
 
---                 : Gains will be used for paying servers  such as explorers & website, the developers, 
+•                 : Gains will be used for paying servers  such as explorers & website, the developers, 
 		    future development for real use of the cryptocurrency in real life - 
 		    new exchanges - aiming Binance (see Roadmap)
 
--- Pre-sale: 50 sats/coin  - 0.0075 for 1 masternode
+• Masternode cost at Pre-sale:   0.0225 BTC 1-4 first days 
+                                    0.0300 BTC 5-7 last days
 
 
 
 
 LINKS:
 
--- Website: https://mineriumcoin.com
+• Website: https://mineriumcoin.com
 
--- Twitter: https://twitter.com/mineriumcoin
+• Twitter: https://twitter.com/mineriumcoin
 
--- Discord: https://discord.gg/yPfMCwH
+• Discord: https://discord.gg/yPfMCwH
 
--- Telegram: https://t.me/MineriumCoinOfficial
+• Telegram: https://t.me/MineriumCoinOfficial
 
 
 
 
 EXCHANGES:
 
--- Exchange: https://erex.io
+• Exchange: https://erex.io
 
 
 
