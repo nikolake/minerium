@@ -1,7 +1,7 @@
 ![](images/mineriumcoin.png)
 
 
-Minerium staging treeMinerium staging treeMinerium staging tree 
+Minerium staging tree 
 =========================
 
 `master:` [![Build Status](https://travis-ci.org/minerium/minerium.svg?branch=master)](https://travis-ci.org/minerium/minerium) 
