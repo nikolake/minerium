@@ -17,24 +17,24 @@ Minerium is a mineable SHA256 crypto currency, a coin which use the bitcoin prot
 Here are it's details and specifications:
 
 
--- ASICS friendly
+• ASICS friendly
 
--- 51% attacks resistant
+• 51% attacks resistant
 
--- Adopts Segwit transations
+• Adopts Segwit transations
 
--- Based peer-to-peer cryptocurrency that is forked from Syscoin and Martkist coin
+• Based peer-to-peer cryptocurrency that is forked from Syscoin and Martkist coin
 
--- Uses the POW (Proof of Work) combined with the Masternodes for more security and passive profits
+• Uses the POW (Proof of Work) combined with the Masternodes for more security and passive profits
  
  -Avoiding frozen blockchain - Blocks are fluid
 
--- Adopts the technique of PrivateSend which allows anonymous transactions
+• Adopts the technique of PrivateSend which allows anonymous transactions
  
  -It mixes all the transactions into multiple parts, everything inside one single transaction.
 
 
--- The superblocks have been removed, and instead we implemented a new function called "SuperDay" during which the blocks reward receive an important augmentation of it's amount.
+• The superblocks have been removed, and instead we implemented a new function called "SuperDay" during which the blocks reward receive an important augmentation of it's amount.
     The goal beeing to give a chance of the new miners joining the project late in time since it started, to mine it themselves,        and not being forced to buy at the exchange.
     Making a mining process less boring, less linear and more interesting.
 
