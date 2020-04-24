@@ -57,7 +57,7 @@ Here are it's details and specifications:
 
 • Prune height:     1,000,000
 
-• Max supply:       36,000,660 millon coins
+• Max supply:       36,000,660 coins
 
 • Masternodes:         15,000 coins
 
