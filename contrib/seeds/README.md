@@ -9,3 +9,10 @@ The seeds compiled into the release are created from sipa's DNS seed data, like 
     python makeseeds.py < seeds_main.txt > nodes_main.txt
     python generate-seeds.py . > ../../src/chainparamsseeds.h
 
+## Dependencies
+
+Ubuntu:
+
+    sudo apt-get install python3-dnspython
+
+
