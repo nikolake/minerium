@@ -83,6 +83,8 @@ LINKS:
 
 • Website: https://mineriumcoin.com
 
+• Explorer: https://mineriumexplorer.com
+
 • Twitter: https://twitter.com/mineriumcoin
 
 • Discord: https://discord.gg/yPfMCwH
