@@ -179,8 +179,8 @@ public:
         consensus.nGovernanceMinQuorum = 33;
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 13;
-        consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x00000000d8f43e53cf35ee17a360ba57e26057b57ebd21224dcbebdaa30cc3f4");
+        consensus.BIP34Height = 3500;
+        consensus.BIP34Hash = uint256S("0x0000000000000f8ecf081062f5205c1a03e550c4128d217d7555c1552d61ac34");
         consensus.BIP65Height = 0; // 00000000000076d8fcea02ec0963de4abfd01e771fec0863f960c2c64fe6f357
         consensus.BIP66Height = 0; // 00000000000b1fa2dfa312863570e13fae9ca7b5566cb27e55422620b469aefa
         consensus.DIP0001Height = 0;
@@ -283,6 +283,7 @@ public:
         checkpointData = {
             {
                 { 0, uint256S("00000000d8f43e53cf35ee17a360ba57e26057b57ebd21224dcbebdaa30cc3f4")},
+                { 3500, uint256S("0000000000000f8ecf081062f5205c1a03e550c4128d217d7555c1552d61ac34")},
 
             }
         };
