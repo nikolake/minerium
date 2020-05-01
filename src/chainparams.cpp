@@ -291,8 +291,8 @@ public:
         };
 	    
 		chainTxData = ChainTxData{
-			// Data from rpc: getchaintxstats 4096 92025d074fdd503b0f0f4d4a11dcfbc8a57509d0a196bb400ebdb19556d61b0d
-			/* nTime    */ 0,
+			// Data from rpc: getchaintxstats 4096 00000000000007f64a30182a7a7b942db4b4f1d8868b47c0704862613edaba18
+			/* nTime    */ 1588338919,
 			/* nTxCount */ 0,
 			/* dTxRate  */ 0
 		};
