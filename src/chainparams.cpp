@@ -215,10 +215,10 @@ public:
 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000010f0544546f44aa744");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00"); // 307300
+        consensus.defaultAssumeValid = uint256S("0x00000000000007f64a30182a7a7b942db4b4f1d8868b47c0704862613edaba18"); // 9400
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -293,8 +293,8 @@ public:
 		chainTxData = ChainTxData{
 			// Data from rpc: getchaintxstats 4096 00000000000007f64a30182a7a7b942db4b4f1d8868b47c0704862613edaba18
 			/* nTime    */ 1588338919,
-			/* nTxCount */ 0,
-			/* dTxRate  */ 0
+			/* nTxCount */ 10260,
+			/* dTxRate  */ 0.01727019779931222
 		};
     }
 };
