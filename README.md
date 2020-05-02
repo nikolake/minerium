@@ -94,9 +94,13 @@ LINKS:
 
 
 
-EXCHANGES:
+EXCHANGES: https://erex.io
 
-• Exchange: https://erex.io
+• BTC : https://t.co/o7rNnhTIjp
+• ETH : https://t.co/AnN7oRCxfW
+• DOGE : https://t.co/Nup4KmGuHT
+• USDT : https://t.co/K8tQmgXK8c
+• EREX : https://t.co/9gtrQyUYvT
 
 
 
