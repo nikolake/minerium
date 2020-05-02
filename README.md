@@ -1,7 +1,7 @@
 ![](images/mineriumcoin.jpg)
 
 
-Minerium staging tree 
+Minerium Coin
 =========================
 
 `master:` [![Build Status](https://travis-ci.org/minerium/minerium.svg?branch=master)](https://travis-ci.org/minerium/minerium) 
@@ -79,7 +79,9 @@ Here are it's details and specifications:
 
 
 
-LINKS:
+
+Links
+----------------
 
 • Website: https://mineriumcoin.com
 
@@ -94,7 +96,10 @@ LINKS:
 
 
 
-EXCHANGES: https://erex.io
+Exchange
+----------------
+
+https://erex.io
 
 • BTC : https://t.co/o7rNnhTIjp
 
